@@ -1,0 +1,141 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+/* 
+font-family: 'Big Shoulders Display', cursive;  700
+font-family: 'Lexend Deca', sans-serif;  400
+*/
+
+main {
+    display: flex;
+    width: 1030px;
+    height: 550px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.lewa {
+background-color: hsl(31, 77%, 52%);
+width: 33%;
+padding: 60px;
+}
+
+.srodek{
+background-color: hsl(184, 100%, 22%);
+width: 33%;
+padding: 60px;
+}
+.prawa {
+    background-color: hsl(179, 100%, 13%);
+    width: 33%;
+    padding: 60px;
+}
+
+p{
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca', sans-serif;
+    line-height: 1.7;
+    font-size: 16px;
+}
+h1
+{
+    font-family: 'Big Shoulders Display', cursive;
+    color: hsl(0, 0%, 95%);
+    font-size: 45px;
+}
+button {
+    border-radius: 60px;
+    height: 50px;
+    width: 150px;
+    border: none;
+    margin-top: 80px;
+    font-size: 16px;
+    font-family: 'Lexend Deca', sans-serif;
+   
+}
+#but1 {
+    color: hsl(31, 77%, 52%);
+    transition: all 0.2s  ease-in-out;
+}
+#but2{
+    color: hsl(184, 100%, 22%);
+    transition: all 0.2s  ease-in-out;
+}
+#but3{
+    color: hsl(179, 100%, 13%);
+    transition: all 0.2s  ease-in-out;
+}
+#but1:hover {
+    border: solid 3px white;
+    background-color: hsl(31, 77%, 52%);
+    color: hsl(0, 0%, 95%);
+}
+
+#but2:hover {
+    border: solid 3px white;
+    background-color:hsl(184, 100%, 22%);
+    color: hsl(0, 0%, 95%);
+}
+#but3:hover {
+    border: solid 3px white;
+    background-color: hsl(179, 100%, 13%);
+    color: hsl(0, 0%, 95%);
+}
+
+
+@media all and (max-width:375px)
+{
+    body{
+        margin: 0;
+        padding: 0;
+      
+    }
+    main {
+        display: flex;
+        width: 350px;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .lewa {
+    width: 100%;
+        margin-top: 500px;
+
+    }
+    
+    .srodek{
+
+        width: 100%;
+        
+    }
+    .prawa {
+        width: 100%;
+        margin-bottom: 30px; 
+        
+        
+    }
+      
+    p{
+       
+        font-size: 16px;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    h1
+    {
+        
+        font-size: 35px;
+        margin-left: 50px;
+    }
+    img { 
+        margin-left: 50px;
+    }
+    button {
+        margin-left: 50px;
+        margin-top: 10px;
+    }
+}
